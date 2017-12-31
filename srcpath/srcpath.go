@@ -25,7 +25,7 @@ func SrcPath() string {
 // FromRootPath returns the giving path as absolute from the GOROOT path
 // where the internal packages are stored.
 func FromRootPath(pr string) string {
-	return filepath.Join(goRoot, pr)
+	return filepath.Join(goRootSrcPath, pr)
 }
 
 // FromSrcPath returns the giving path as absolute from the gosrc path.
